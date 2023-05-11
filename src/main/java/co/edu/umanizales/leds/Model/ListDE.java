@@ -40,6 +40,22 @@ public class ListDE {
         }
         size++;
     }
+    /*
+    Verificamos si  head está vacío. Si lo está, retorno sin hacer nada.
+    Calculo el índice del nodo en la posición media de la lista doblemente enlazada size/2.
+    Crear un ayudante temp y lo apuntamos  al head.
+    el ayudante se mueve hacia adelante hasta el nodo en la posición media.
+    Creamos un puntero next y lo apuntamos al nodo en la posición media.
+    se enciende  LED en el nodo actual y establecer su fecha y hora de encendido.
+            Espera de  1 segundo.
+    luego se Apaga el LED en el nodo actual y establecemos  su fecha y hora de apagado.
+    Movemos el puntero next hacia adelante al siguiente nodo y repetir los pasos 6-8 hasta el final de la lista.
+    Creamos un puntero previous y lo apuntamos  al nodo anterior al nodo en la posición media.
+    Movemos el puntero previous hacia atrás hasta el inicio de la lista.
+    encendemos el LED en el nodo actual y establecer su fecha y hora de encendido.
+            Esperar 1 segundo.
+
+        */
 
     public void lightLedInMiddle() {
         if (this.head == null) {
